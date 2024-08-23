@@ -18,9 +18,9 @@ publishing {
 
         // Provide artifacts information required by Maven Central
         pom {
-            name.set("Kotlin Multiplatform library template")
-            description.set("Dummy library to test deployment to Maven Central")
-            url.set("https://github.com/Kotlin/multiplatform-library-template")
+            name.set("Fibonacci")
+            description.set("Fibonacci library to test deployment to Maven Central")
+            url.set("https://github.com/pahill/fibonacci")
 
             licenses {
                 license {
@@ -37,7 +37,7 @@ publishing {
                 }
             }
             scm {
-                url.set("https://github.com/Kotlin/multiplatform-library-template")
+                url.set("https://github.com/pahill/fibonacci")
             }
         }
     }

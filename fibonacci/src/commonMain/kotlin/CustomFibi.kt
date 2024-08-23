@@ -1,4 +1,6 @@
-val fibi = sequence {
+package io.github.pahill.fibonacci
+
+fun generateFibi() = sequence {
     var a = firstElement
     yield(a)
     var b = secondElement
