@@ -2,7 +2,6 @@ import com.vanniktech.maven.publish.SonatypeHost
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
-
 group = "io.github.pahill"
 version = "1.0.3"
 
@@ -49,10 +48,6 @@ android {
 }
 
 mavenPublishing {
-    publishToMavenCentral(SonatypeHost.DEFAULT)
-    // or when publishing to https://s01.oss.sonatype.org
-    publishToMavenCentral(SonatypeHost.S01)
-    // or when publishing to https://central.sonatype.com/
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
 
     signAllPublications()
