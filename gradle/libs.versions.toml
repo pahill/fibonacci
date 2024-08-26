@@ -12,3 +12,4 @@ nexus-publish = { module = "io.github.gradle-nexus.publish-plugin:io.github.grad
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+publish = { id = "com.vanniktech.maven.publish", version = "0.29.0" }
