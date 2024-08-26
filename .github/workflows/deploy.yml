@@ -46,4 +46,4 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Publish to Maven Central
-        run: ./gradlew publish --no-configuration-cache
+        run: ./gradlew publishAllPublicationsToMavenCentralRepository --no-configuration-cache
