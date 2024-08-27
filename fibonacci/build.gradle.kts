@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 group = "io.github.pahill"
-version = "1.0.3"
+version = "1.0.4"
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -52,7 +52,7 @@ mavenPublishing {
 
     signAllPublications()
 
-    coordinates("io.github.pahill", "fibonacci", "1.0.3")
+    coordinates("io.github.pahill", "fibonacci", "1.0.4")
 
     pom {
         name.set("Fibonacci library")
