@@ -17,20 +17,7 @@ jobs:
     uses: ./.github/workflows/gradle.yml
   deploy:
     needs: build
-    strategy:
-      matrix:
-        include:
-          - target: publishIosArm64PublicationToMavenCentral
-            os: macos-latest
-          - target: publishAndroidReleasePublicationToMavenCentral
-            os: ubuntu-latest
-          - target: publishJvmPublicationToMavenCentral
-            os: ubuntu-latest
-          - target: publishLinuxX64PublicationToMavenCentral
-            os: ubuntu-latest
-          - target: publishKotlinMultiplatformPublicationToMavenCentral
-            os: ubuntu-latest
-    runs-on: ${{ matrix.os }}
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
       - name: Validate Gradle Wrapper
