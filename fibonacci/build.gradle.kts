@@ -52,7 +52,7 @@ mavenPublishing {
 
     signAllPublications()
 
-    coordinates("io.github.pahill", "mylibrary-fibonacci", "1.0.3")
+    coordinates("io.github.pahill", "fibonacci", "1.0.3")
 
     pom {
         name.set("Fibonacci library")
